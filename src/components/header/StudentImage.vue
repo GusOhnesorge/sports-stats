@@ -21,7 +21,8 @@ export default {
       return names.reduce((prevInitials, name) => prevInitials + name[0], "");
     },
     initialsColor() {
-      const calculatedColorIndex = this.student.name.charCodeAt(0) % 6;
+      const calculatedColorIndex =
+        this.studentInitials.slice(-1).charCodeAt(0) % 6;
       return PlaceholderColors.colors[calculatedColorIndex];
     }
   }
