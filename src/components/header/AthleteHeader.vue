@@ -1,7 +1,7 @@
 <template>
   <div class="athlete-header">
     <div class="athlete-header__student">
-      <img :src="athlete.profile_image" />
+      <StudentImage :student="athlete" />
       <div class="athlete-header__student__overview">
         <h2>{{ athlete.name }}</h2>
         <div class="athlete-header__student__info">
@@ -24,6 +24,7 @@
   </div>
 </template>
 <script>
+import StudentImage from "./StudentImage.vue";
 export default {
   name: "AcamdemicHeader",
   props: {
@@ -31,7 +32,8 @@ export default {
       type: Object,
       required: true
     }
-  }
+  },
+  components: { StudentImage }
 };
 </script>
 <style>
@@ -52,10 +54,6 @@ export default {
   color: var(--name-blue);
   padding: 0;
   margin: 0;
-}
-.athlete-header__student img {
-  height: 4rem;
-  border-radius: 50%;
 }
 .athlete-header__student__overview {
   display: flex;

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AthleteHeader from "./AthleteHeader.vue";
+import AthleteHeader from "./header/AthleteHeader.vue";
 
 export default {
   name: "AcademicFitReport",
