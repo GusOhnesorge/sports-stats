@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <AcademicFitReport :athlete="athlete_info"/>
+    <AcademicFitReport :athlete="athlete_info" />
   </div>
 </template>
 
@@ -20,3 +20,6 @@ export default {
   }
 };
 </script>
+<style>
+@import "./assets/styles/_variables.css";
+</style>
