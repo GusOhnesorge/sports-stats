@@ -1,2 +1,2 @@
 # sports-stats
-Created with CodeSandbox
+An app for viewing stats for a student athlete
