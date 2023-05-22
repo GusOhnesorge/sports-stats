@@ -1,0 +1,10 @@
+:root {
+  --name-blue: #00b4ff;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.bold {
+  font-weight: 800;
+}
