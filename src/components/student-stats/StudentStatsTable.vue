@@ -30,6 +30,7 @@ export default {
 table {
   font-size: 0.5625rem;
   border-collapse: collapse;
+  width: 100%;
 }
 tr:nth-child(odd) {
   background-color: white;
