@@ -27,6 +27,7 @@ export default {
 }
 .academic-fit-report__table {
   margin-bottom: 6rem;
+  padding-bottom: 0.5rem;
   display: block;
   overflow-x: auto;
   white-space: nowrap;
