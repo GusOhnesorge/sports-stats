@@ -1,14 +1,18 @@
 <template>
   <div class="academic-fit-report">
-    <AthleteHeader class="academic-fit-report__header" :athlete="athlete" />
+    <hr />
+    <AthleteHeader :athlete="athlete" />
     <div class="academic-fit-report__table">
       <StudentStatsTable :athlete="athlete" />
     </div>
+    <StatsReportFooter />
+    <hr />
   </div>
 </template>
 <script>
 import AthleteHeader from "./header/AthleteHeader.vue";
 import StudentStatsTable from "./student-stats/StudentStatsTable.vue";
+import StatsReportFooter from "./StatsReportFooter.vue";
 
 export default {
   name: "AcademicFitReport",
@@ -18,18 +22,24 @@ export default {
       required: false
     }
   },
-  components: { AthleteHeader, StudentStatsTable }
+  components: { AthleteHeader, StudentStatsTable, StatsReportFooter }
 };
 </script>
 <style scoped>
-.academic-fit-report__header {
-  margin-bottom: 2rem;
+.academic-fit-report {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .academic-fit-report__table {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   display: block;
   overflow-x: auto;
   white-space: nowrap;
+}
+hr {
+  width: 100%;
+  border: 0.25rem solid var(--bright-blue);
 }
 </style>

@@ -50,7 +50,7 @@ export default {
 }
 .athlete-header__student h2 {
   font-size: 1rem;
-  color: var(--name-blue);
+  color: var(--bright-blue);
   padding: 0;
   margin: 0;
 }
