@@ -6,7 +6,7 @@ defineProps({
     required: true
   },
   gpa: {
-    type: Object,
+    type: Number,
     required: true
   }
 });

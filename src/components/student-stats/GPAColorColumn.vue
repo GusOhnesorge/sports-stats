@@ -9,11 +9,11 @@ import {
 } from "@/assets/styles/variables.module.css";
 const props = defineProps({
   schoolGpa: {
-    type: Object,
+    type: Number,
     required: true
   },
   studentGpa: {
-    type: Object,
+    type: Number,
     required: true
   }
 });

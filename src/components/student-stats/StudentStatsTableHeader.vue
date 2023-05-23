@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
   stats: {
-    type: Object,
+    type: Array,
     required: true
   }
 });
