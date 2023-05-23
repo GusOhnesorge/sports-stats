@@ -1,0 +1,7 @@
+:export {
+  GpaVeryLow: var(--gpa-very-low);
+  GpaLow: var(--gpa-low);
+  GpaMedium: var(--gpa-medium);
+  GpaHigh: var(--gpa-high);
+  GpaVeryHigh: var(--gpa-very-high);
+}

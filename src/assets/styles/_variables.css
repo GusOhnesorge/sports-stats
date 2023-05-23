@@ -2,6 +2,11 @@
   --name-blue: #00b4ff;
   --table-black: #222222;
   --table-light-blue: #e8f0fe;
+  --gpa-very-low: #d7737d;
+  --gpa-low: #c194b5;
+  --gpa-medium: #b4a7d6;
+  --gpa-high: #a6a8da;
+  --gpa-very-high: #75ace5;
 }
 p {
   margin: 0;

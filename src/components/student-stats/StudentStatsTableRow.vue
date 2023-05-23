@@ -6,7 +6,7 @@
     <td class="centered-text">{{ stats.ranking }}</td>
     <td>{{ stats.gpa.min }}</td>
     <td>{{ stats.gpa["25%"] }}</td>
-    <GPAColorColumn :school-gpa="stats.gpa" :student-gpa="gpa" />
+    <GPAColorColumn :school-gpa="stats.gpa['50%']" :student-gpa="gpa" />
     <td>{{ stats.gpa["75%"] }}</td>
     <td>{{ stats.gpa.max }}</td>
     <td class="centered-text">
