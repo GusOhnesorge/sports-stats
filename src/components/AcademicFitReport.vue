@@ -26,6 +26,8 @@ defineProps({
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .academic-fit-report__table {
   margin-bottom: 2rem;
