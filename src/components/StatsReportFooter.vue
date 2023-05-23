@@ -15,11 +15,6 @@
     </p>
   </div>
 </template>
-<script>
-export default {
-  name: "StatsReportFooter"
-};
-</script>
 <style scoped>
 .stats-report-footer {
   display: flex;
