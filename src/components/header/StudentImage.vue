@@ -1,33 +1,30 @@
+<script setup>
+import { computed } from "vue";
+import PlaceholderColors from "@/assets/placeholder-colors.json";
+
+const props = defineProps({
+  student: {
+    type: Object,
+    required: true
+  }
+});
+const student = computed(() => props.student);
+const studentInitials = computed(() => {
+  const names = student.value.name.split(" ");
+  return names.reduce((prevInitials, name) => prevInitials + name[0], "");
+});
+const initialsColor = computed(() => {
+  const calculatedColorIndex =
+    studentInitials.value.slice(-1).charCodeAt(0) % 6;
+  return PlaceholderColors.colors[calculatedColorIndex];
+});
+</script>
 <template>
   <div class="student-image">
     <img v-if="false" :src="student.profile_image" />
     <div class="student-image__initials" v-else>{{ studentInitials }}</div>
   </div>
 </template>
-<script>
-import PlaceholderColors from "@/assets/placeholder-colors.json";
-
-export default {
-  name: "StudentImage",
-  props: {
-    student: {
-      type: Object,
-      required: true
-    }
-  },
-  computed: {
-    studentInitials() {
-      const names = this.student.name.split(" ");
-      return names.reduce((prevInitials, name) => prevInitials + name[0], "");
-    },
-    initialsColor() {
-      const calculatedColorIndex =
-        this.studentInitials.slice(-1).charCodeAt(0) % 6;
-      return PlaceholderColors.colors[calculatedColorIndex];
-    }
-  }
-};
-</script>
 <style scoped>
 .student-image {
   --background-color: v-bind("initialsColor");

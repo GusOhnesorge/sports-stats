@@ -1,3 +1,12 @@
+<script setup>
+import StudentImage from "./StudentImage.vue";
+defineProps({
+  athlete: {
+    type: Object,
+    required: true
+  }
+});
+</script>
 <template>
   <div class="athlete-header">
     <div class="athlete-header__student">
@@ -23,19 +32,6 @@
     </div>
   </div>
 </template>
-<script>
-import StudentImage from "./StudentImage.vue";
-export default {
-  name: "AcamdemicHeader",
-  props: {
-    athlete: {
-      type: Object,
-      required: true
-    }
-  },
-  components: { StudentImage }
-};
-</script>
 <style>
 .athlete-header {
   display: flex;
