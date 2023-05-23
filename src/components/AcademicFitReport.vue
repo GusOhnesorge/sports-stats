@@ -1,3 +1,15 @@
+<script setup>
+import AthleteHeader from "./header/AthleteHeader.vue";
+import StudentStatsTable from "./student-stats/StudentStatsTable.vue";
+import StatsReportFooter from "./StatsReportFooter.vue";
+
+defineProps({
+  athlete: {
+    type: Object,
+    required: false
+  }
+});
+</script>
 <template>
   <div class="academic-fit-report">
     <hr />
@@ -9,22 +21,6 @@
     <hr />
   </div>
 </template>
-<script>
-import AthleteHeader from "./header/AthleteHeader.vue";
-import StudentStatsTable from "./student-stats/StudentStatsTable.vue";
-import StatsReportFooter from "./StatsReportFooter.vue";
-
-export default {
-  name: "AcademicFitReport",
-  props: {
-    athlete: {
-      type: Object,
-      required: false
-    }
-  },
-  components: { AthleteHeader, StudentStatsTable, StatsReportFooter }
-};
-</script>
 <style scoped>
 .academic-fit-report {
   display: flex;
