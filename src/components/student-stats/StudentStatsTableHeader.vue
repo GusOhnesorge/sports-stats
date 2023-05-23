@@ -1,3 +1,11 @@
+<script setup>
+defineProps({
+  stats: {
+    type: Object,
+    required: true
+  }
+});
+</script>
 <template>
   <thead>
     <tr>
@@ -42,17 +50,6 @@
     </tr>
   </thead>
 </template>
-<script>
-export default {
-  name: "StudentsStatsTableHeader",
-  props: {
-    stats: {
-      type: Object,
-      required: true
-    }
-  }
-};
-</script>
 <style scoped>
 table th {
   text-align: center;

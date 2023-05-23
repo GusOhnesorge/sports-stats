@@ -1,3 +1,14 @@
+<script setup>
+import StudentStatsTableHeader from "./StudentStatsTableHeader.vue";
+import StudentStatsTableRow from "./StudentStatsTableRow.vue";
+
+defineProps({
+  athlete: {
+    type: Object,
+    required: true
+  }
+});
+</script>
 <template>
   <table id="stats-table">
     <colgroup span="5"></colgroup>
@@ -11,21 +22,6 @@
     </tbody>
   </table>
 </template>
-<script>
-import StudentStatsTableHeader from "./StudentStatsTableHeader.vue";
-import StudentStatsTableRow from "./StudentStatsTableRow.vue";
-
-export default {
-  name: "StudentsStatsTable",
-  props: {
-    athlete: {
-      type: Object,
-      required: true
-    }
-  },
-  components: { StudentStatsTableHeader, StudentStatsTableRow }
-};
-</script>
 <style scoped>
 table {
   font-size: 0.5625rem;

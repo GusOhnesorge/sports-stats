@@ -1,3 +1,16 @@
+<script setup>
+import GPAColorColumn from "./GPAColorColumn.vue";
+defineProps({
+  stats: {
+    type: Object,
+    required: true
+  },
+  gpa: {
+    type: Object,
+    required: true
+  }
+});
+</script>
 <template>
   <tr>
     <td class="sticky-left">{{ stats.school }}</td>
@@ -18,23 +31,6 @@
     <td class="centered-text">{{ stats.act.min }} - {{ stats.act.max }}</td>
   </tr>
 </template>
-<script>
-import GPAColorColumn from "./GPAColorColumn.vue";
-export default {
-  name: "StudentStatsTableRow",
-  props: {
-    stats: {
-      type: Object,
-      required: true
-    },
-    gpa: {
-      type: Object,
-      required: true
-    }
-  },
-  components: { GPAColorColumn }
-};
-</script>
 <style scoped>
 td {
   padding: 0.375rem;
