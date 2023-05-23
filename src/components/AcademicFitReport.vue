@@ -23,10 +23,10 @@ export default {
 </script>
 <style scoped>
 .academic-fit-report__header {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .academic-fit-report__table {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   padding-bottom: 0.5rem;
   display: block;
   overflow-x: auto;
