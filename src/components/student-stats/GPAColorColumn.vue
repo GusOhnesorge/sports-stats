@@ -13,11 +13,11 @@ export default {
   name: "GPAColorColumn",
   props: {
     schoolGpa: {
-      type: Object,
+      type: Number,
       required: true
     },
     studentGpa: {
-      type: Object,
+      type: Number,
       required: true
     }
   },
