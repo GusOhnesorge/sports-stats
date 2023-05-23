@@ -77,8 +77,14 @@ export default {
   height: 2.5rem;
 }
 @media only screen and (max-width: 769px) {
+  .athlete-header {
+    justify-content: center;
+  }
   .athlete-header__student__overview {
     height: auto;
+  }
+  .athlete-header__logo {
+    align-items: center;
   }
 }
 </style>
