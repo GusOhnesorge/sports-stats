@@ -47,7 +47,7 @@ export default {
   name: "StudentsStatsTableHeader",
   props: {
     stats: {
-      type: Object,
+      type: Array,
       required: true
     }
   }
