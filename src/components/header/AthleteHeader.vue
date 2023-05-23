@@ -47,7 +47,6 @@ export default {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
-  height: 4rem;
 }
 .athlete-header__student h2 {
   font-size: 1rem;
@@ -58,13 +57,13 @@ export default {
 .athlete-header__student__overview {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 4rem;
 }
 .athlete-header__student__info {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 100%;
+  height: 100%;
   gap: 0.1875rem 2rem;
   font-size: 0.75rem;
 }
@@ -78,8 +77,8 @@ export default {
   height: 2.5rem;
 }
 @media only screen and (max-width: 769px) {
-  .athlete-header__student__info {
-    max-height: none;
+  .athlete-header__student__overview {
+    height: auto;
   }
 }
 </style>
